@@ -5,10 +5,8 @@ int main(void)
 {
     int num1, denum1, num2, denum2, result_num, result_denum;
     int gcd;
-    printf("Enter first fraction: ");
-    scanf("%d / %d", &num1, &denum1);
-    printf("Enter second fraction: ");
-    scanf("%d / %d", &num2, &denum2);
+    printf("Enter x/x + x/x: ");
+    scanf("%d / %d + %d / %d", &num1, &denum1, &num2, &denum2);
     result_num = num1 * denum2 + num2 * denum1;
     result_denum = denum1 * denum2;
     // euclid
@@ -35,3 +33,4 @@ int findGCD(int a, int b)
         return b;
     }
 }
+
